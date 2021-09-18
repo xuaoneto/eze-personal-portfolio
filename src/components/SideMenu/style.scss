@@ -1,0 +1,114 @@
+.side-bar-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 100%;
+  z-index: 100;
+  display: flex;
+  transform: translate3d(0, 0, 0);
+  flex-direction: column;
+  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2c2d32;
+    opacity: 0.6;
+    z-index: 99;
+  }
+  .nav-button {
+    cursor: pointer;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    width: 28px;
+    height: 50px;
+    margin-top: 25px;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+
+    &:hover {
+      .spans-menu {
+        span {
+          width: 100%;
+        }
+      }
+    }
+
+    .spans-menu {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      span {
+        border-radius: 1px;
+        height: 2px;
+        transition: all 0.3s;
+      }
+      .bar1 {
+        border: none;
+        width: 100%;
+        background: #fac921;
+      }
+      .bar1.active {
+        transform: rotate(45deg) translateX(1.5px);
+        width: 100%;
+      }
+      .bar2 {
+        border: none;
+        width: 70%;
+        background: #fac921;
+        margin-top: 6px;
+      }
+      .bar2.active {
+        width: 0;
+        margin: 0;
+        position: absolute;
+      }
+
+      .bar3 {
+        border: none;
+        width: 0%;
+        background: #fac921;
+        margin-top: 6px;
+      }
+      .bar3.active {
+        transform: rotate(-45deg) translateX(1.5px);
+        width: 100%;
+        margin: 0;
+      }
+    }
+    .menu-button-text {
+      font-family: inherit;
+      font-size: 13px;
+
+      margin: 0;
+      padding: 0;
+      color: white;
+    }
+  }
+  .socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+    margin-bottom: 25px;
+    z-index: 101;
+    div {
+      img {
+        transition: transform 0.3s;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.leftmenu-container {
+  position: absolute;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100vh;
+  transition: transform 0.4s;
+  background: rgba(255, 255, 255, 0.031);
+  transform: translateX(0);
+  z-index: 98;
+}
+.leftmenu-container.active {
+  transform: translateX(380px);
+}
