@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+#root {
+  --leftmenu: #252425;
+  --lmsecondary: rgba(255, 255, 255, 0.031);
+}
 
 .leftmenu-container {
   position: absolute;
@@ -7,7 +10,7 @@
   width: 410px;
   height: calc(100% - 70px);
   transition: all 0.4s;
-  background: #252425;
+  background: var(--leftmenu);
   transform: translateX(0);
   z-index: 98;
   padding: 35px 30px 35px 160px;
@@ -26,7 +29,7 @@
     .name {
       margin: 0;
       color: white;
-      font-family: "Open Sans Condensed", sans-serif;
+      font-family: "Titillium Web", sans-serif;
       font-size: 30px;
       text-decoration: none;
     }
@@ -37,7 +40,7 @@
       height: 100%;
       transition: all 0.4s;
       margin: 0;
-      background: rgba(255, 255, 255, 0.031);
+      background: var(--lmsecondary);
     }
   }
   .internalmenu-container {
@@ -51,6 +54,7 @@
       width: 350px;
       height: 40px;
       position: relative;
+      cursor: pointer;
       &:hover {
         .hovered {
           width: 100%;
@@ -60,7 +64,7 @@
         position: absolute;
         width: 0%;
         height: 100%;
-        background: rgba(255, 255, 255, 0.031);
+        background: var(--lmsecondary);
         transition: all 0.4s;
       }
       .item-name {
@@ -70,11 +74,31 @@
         font-weight: 600;
       }
       .item-name.active {
-        color: #fac921;
+        color: var(--yellow);
       }
       img {
         margin-right: 10px;
       }
+    }
+  }
+  .bottom-block {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60%;
+    height: 10%;
+    background: var(--lmsecondary);
+  }
+  .menu-name {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    display: flex;
+    transform: rotate(-90deg);
+
+    .big-menu {
+      font-size: 70px;
+      color: rgba(255, 255, 255, 0.2);
     }
   }
 }

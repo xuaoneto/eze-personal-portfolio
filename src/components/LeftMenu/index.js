@@ -4,12 +4,12 @@ import InsertSVG from "../InsertSVG";
 const LeftMenu = ({ state }) => {
   const rightarrow = <InsertSVG name="rightarrowicon" />;
   const internalmenu = [
-    { name: "HOME", icon: rightarrow },
-    { name: "PORTFOLIO", icon: rightarrow },
-    { name: "SERVICES", icon: rightarrow },
-    { name: "CONTACTS", icon: rightarrow },
-    { name: "BLOG", icon: rightarrow },
-    { name: "PAGES", icon: rightarrow },
+    { name: "HOME", icon: rightarrow, active: true },
+    { name: "PORTFOLIO", icon: rightarrow, active: false },
+    { name: "SERVICES", icon: rightarrow, active: false },
+    { name: "CONTACTS", icon: rightarrow, active: false },
+    { name: "BLOG", icon: rightarrow, active: false },
+    { name: "PAGES", icon: rightarrow, active: false },
   ];
 
   const ActiveItem = (id) => {
@@ -42,11 +42,17 @@ const LeftMenu = ({ state }) => {
               }}
             >
               <div className="hovered"></div>
-              <p className="item-name">{item.name}</p>
+              <p className={item.active ? "item-name active" : "item-name"}>
+                {item.name}
+              </p>
               {rightarrow}
             </div>
           );
         })}
+      </div>
+      <div className="bottom-block" />
+      <div className="menu-name">
+        <h1 className="big-menu">MENU</h1>
       </div>
     </div>
   );
