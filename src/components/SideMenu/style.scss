@@ -39,6 +39,9 @@
     z-index: 100;
 
     &:hover {
+      .menu-button-text {
+        opacity: 1;
+      }
       .spans-menu {
         span {
           width: 100%;
@@ -92,10 +95,13 @@
     .menu-button-text {
       font-family: inherit;
       font-size: 13px;
-
+      opacity: 0.6;
       margin: 0;
       padding: 0;
       color: white;
+    }
+    .menu-button-text.active {
+      opacity: 1;
     }
   }
   .socials {

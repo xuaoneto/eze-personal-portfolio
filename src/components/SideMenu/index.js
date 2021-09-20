@@ -10,14 +10,17 @@ const SideMenu = () => {
     let bar1 = document.getElementsByClassName("bar1");
     let bar2 = document.getElementsByClassName("bar2");
     let bar3 = document.getElementsByClassName("bar3");
+    let menu = document.getElementsByClassName("menu-button-text");
     if (leftMenu) {
       bar1[0].className = "bar1";
       bar2[0].className = "bar2";
       bar3[0].className = "bar3";
+      menu[0].className = "menu-button-text";
     } else {
       bar1[0].className = "bar1 active";
       bar2[0].className = "bar2 active";
       bar3[0].className = "bar3 active";
+      menu[0].className = "menu-button-text active";
     }
   };
 
