@@ -18,9 +18,10 @@
 #AnimatedTrain1 {
   position: absolute;
   display: flex;
-  left: 16.08%;
+  left: 16.13%;
   z-index: 99;
   animation: AnimatedTrain2 20s 2s infinite;
+  opacity: 0.5;
   svg {
   }
 }
@@ -28,8 +29,9 @@
   position: absolute;
   display: flex;
   left: 29.5%;
-  animation: AnimatedTrain2 20s infinite;
+  animation: AnimatedTrain2 17s infinite;
   z-index: 99;
+  opacity: 0.5;
   svg {
   }
 }
