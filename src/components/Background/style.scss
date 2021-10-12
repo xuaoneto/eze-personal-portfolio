@@ -1,0 +1,110 @@
+#AnimatedBackground {
+  opacity: 0.5;
+  width: 100%;
+  height: auto;
+  #train1 {
+    animation: rail1 10s infinite;
+  }
+  #train2 {
+    animation: rail2 7s infinite;
+  }
+  #train3 {
+    animation: rail3 5s infinite;
+  }
+  .pulses.active {
+    animation: pulse 4s infinite;
+  }
+}
+#AnimatedTrain1 {
+  position: absolute;
+  display: flex;
+  left: 16.08%;
+  z-index: 99;
+  animation: AnimatedTrain2 20s 2s infinite;
+  svg {
+  }
+}
+#AnimatedTrain2 {
+  position: absolute;
+  display: flex;
+  left: 29.5%;
+  animation: AnimatedTrain2 20s infinite;
+  z-index: 99;
+  svg {
+  }
+}
+
+@keyframes AnimatedTrain2 {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(50vh);
+  }
+  20% {
+    transform: translateY(110vh);
+  }
+  30% {
+    transform: translateY(140vh);
+  }
+  40% {
+    transform: translateY(220vh);
+  }
+  50% {
+    transform: translateY(300vh);
+  }
+  94% {
+    transform: rotate(0deg);
+  }
+  95% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: translateY(0) rotate(180deg);
+  }
+}
+
+@keyframes rail1 {
+  0% {
+    transform: translateY(-200px);
+  }
+  75% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(-200px);
+  }
+}
+@keyframes rail2 {
+  0% {
+    transform: translateY(-25px);
+  }
+  75% {
+    transform: translateY(405px);
+  }
+  100% {
+    transform: translateY(-25px);
+  }
+}
+@keyframes rail3 {
+  0% {
+    transform: translateY(-50px);
+  }
+  75% {
+    transform: translateY(150px);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+@keyframes pulse {
+  0% {
+    fill: white;
+  }
+  50% {
+    fill: black;
+  }
+  100% {
+    fill: white;
+  }
+}

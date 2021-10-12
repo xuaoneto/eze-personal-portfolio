@@ -25,6 +25,16 @@
     opacity: 0.6;
     z-index: 99;
   }
+  .upper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    display: flex;
+    margin-top: 25px;
+    z-index: 100;
+  }
   .nav-button {
     cursor: pointer;
     display: flex;

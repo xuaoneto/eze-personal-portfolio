@@ -1,5 +1,8 @@
 import React from "react";
-import InsertSVG from "../InsertSVG";
+import logo from "../../images/logo.svg";
+import mediumicon from "../../images/medium.svg";
+import linkedinicon from "../../images/linkedin.svg";
+import instagramicon from "../../images/instagram.svg";
 import { useState } from "react";
 import LeftMenu from "../LeftMenu";
 
@@ -26,30 +29,41 @@ const SideMenu = () => {
 
   return (
     <div className="side-bar-menu">
-      <div
-        className="nav-button"
-        onClick={() => {
-          menuNav();
-        }}
-      >
-        <div className="spans-menu">
-          <span className="bar1"></span>
-          <span className="bar2"></span>
-          <span className="bar3"></span>
+      <div className="upper">
+        <div className="logo">
+          <img src={logo} width="30px" height="auto" />
         </div>
-        <p className="menu-button-text">Menu</p>
+        <div
+          className="nav-button"
+          onClick={() => {
+            menuNav();
+          }}
+        >
+          <div className="spans-menu">
+            <span className="bar1"></span>
+            <span className="bar2"></span>
+            <span className="bar3"></span>
+          </div>
+          <p className="menu-button-text">Menu</p>
+        </div>
       </div>
       <LeftMenu state={leftMenu} />
       <div className="socials">
-        <div className="facebook-icon">
-          <InsertSVG name="facebookicon" width="24" height="24" />
-        </div>
-        <div className="instagram-icon">
-          <InsertSVG name="linkedinicon" width="24" height="24" />
-        </div>
-        <div className="linkedin-icon">
-          <InsertSVG name="instagramicon" width="24" height="24" />
-        </div>
+        <a href="#">
+          <div className="facebook-icon">
+            <img src={mediumicon} width="24" height="24" />
+          </div>
+        </a>
+        <a href="#">
+          <div className="instagram-icon">
+            <img src={linkedinicon} width="24" height="24" />
+          </div>
+        </a>
+        <a href="#">
+          <div className="linkedin-icon">
+            <img src={instagramicon} width="24" height="24" />
+          </div>
+        </a>
       </div>
     </div>
   );

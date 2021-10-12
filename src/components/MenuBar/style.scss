@@ -1,0 +1,65 @@
+.menubar-container {
+  width: calc(100% - 80px);
+  height: 80px;
+  background: var(--body);
+  z-index: 100;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  .menu-itens {
+    height: 100%;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .bar {
+      height: 3px;
+      width: 13px;
+      background: white;
+      margin-right: 10px;
+    }
+    .bar.active {
+      background: var(--yellow);
+    }
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      &:hover {
+        .bar {
+          background-color: var(--yellow);
+        }
+      }
+    }
+    .item-name1 {
+      color: white;
+    }
+    .item-name1.active {
+      color: var(--yellow);
+    }
+  }
+  .final {
+    width: calc(35% - 16.5% - 2px);
+    height: 100%;
+    display: flex;
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+    background: var(--lmsecondary);
+  }
+}
+.scroll-container {
+  height: 100%;
+  width: 16.5%;
+  background: var(--lmsecondary);
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menubar-container.sticky {
+  position: fixed;
+  top: 0;
+}

@@ -1,0 +1,14 @@
+.portfolio-part {
+  height: 1000px;
+  width: calc(100% - 80px);
+  background: white;
+
+  position: absolute;
+  top: 100vh;
+  right: 0;
+}
+.container-background {
+  display: flex;
+  margin: 40px auto;
+  flex-direction: column;
+}

@@ -1,8 +1,8 @@
 import React from "react";
-import InsertSVG from "../InsertSVG";
+import rightarrowicon from "../../images/rightarrow.svg";
 
 const LeftMenu = ({ state }) => {
-  const rightarrow = <InsertSVG name="rightarrowicon" />;
+  const rightarrow = <img src={rightarrowicon} width="10" height="10" />;
   const internalmenu = [
     { name: "HOME", icon: rightarrow, active: true },
     { name: "PORTFOLIO", icon: rightarrow, active: false },
@@ -32,9 +32,10 @@ const LeftMenu = ({ state }) => {
         <div className="hovered"></div>
       </div>
       <div className="internalmenu-container">
-        {internalmenu.map((item) => {
+        {internalmenu.map((item, index) => {
           return (
             <div
+              key={index}
               className="menu-item"
               id={`${item.name}-menu`}
               onClick={() => {

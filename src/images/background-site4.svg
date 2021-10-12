@@ -1,0 +1,35 @@
+<svg width="1815.9" height="616.92" version="1.1" viewBox="0 0 480.46 163.23" xmlns="http://www.w3.org/2000/svg">
+ <rect x="-2.7732e-5" y=".064488" width="480.46" height="163.16" fill="none" stop-color="#000000" style="paint-order:fill markers stroke"/>
+ <g fill="#333337" stroke="#333337" strokeWidth=".21167">
+  <path d="m79.502-1.8e-5v163.13"/>
+  <path d="m143.77-1.8e-5v163.13"/>
+  <path d="m273.56-1.8e-5v163.13"/>
+  <path d="m332.89-1.8e-5v163.13"/>
+  <path d="m381.71-1.8e-5v163.13"/>
+  <path d="m430.65-1.8e-5v163.13"/>
+ </g>
+ <g fill="#fff" stroke="#646466" strokeLinecap="round" strokeWidth=".21167">
+  <rect x="331.68" y="31.524" width="2.4303" height="2.4303" stop-color="#000000" style="paint-order:fill markers stroke"/>
+  <rect x="331.68" y="105.29" width="2.4303" height="2.4303" stop-color="#000000" style="paint-order:fill markers stroke"/>
+  <rect x="331.68" y="142.1" width="2.4303" height="2.4303" stop-color="#000000" style="paint-order:fill markers stroke"/>
+  <rect x="380.5" y="31.524" width="2.4303" height="2.4303" stop-color="#000000" style="paint-order:fill markers stroke"/>
+  <rect x="380.5" y="68.468" width="2.4303" height="2.4303" stop-color="#000000" style="paint-order:fill markers stroke"/>
+  <rect x="429.44" y="68.468" width="2.4303" height="2.4303" stop-color="#000000" style="paint-order:fill markers stroke"/>
+  <rect x="429.44" y="105.29" width="2.4303" height="2.4303" stop-color="#000000" style="paint-order:fill markers stroke"/>
+  <rect x="429.44" y="142.1" width="2.4303" height="2.4303" stop-color="#000000" style="paint-order:fill markers stroke"/>
+ </g>
+ <rect x="380.05" y="113.44" width="3.323" height="9.0384" ry="1.6615" fill="#fac921" stop-color="#000000" stroke="#646466" strokeLinecap="round" strokeWidth=".21167" style="paint-order:fill markers stroke"/>
+ <rect x="331.23" y="45.921" width="3.323" height="9.0384" ry="1.6615" fill="#fac921" stop-color="#000000" stroke="#646466" strokeLinecap="round" strokeWidth=".21167" style="paint-order:fill markers stroke"/>
+ <g fill="#facd32" font-family="'Segoe UI'" font-size="7.7329px" font-weight="300" letter-spacing="0px" strokeWidth=".26458" word-spacing="0px">
+  <text x="379.02127" y="103.84705" style="line-height:1.25" xml:space="preserve"><tspan x="379.02127" y="103.84705" fill="#facd32" font-family="'Segoe UI'" font-weight="600" strokeWidth=".26458">+</tspan></text>
+  <text x="330.20084" y="41.907177" style="line-height:1.25" xml:space="preserve"><tspan x="330.20084" y="41.907177" fill="#facd32" font-family="'Segoe UI'" font-weight="600" strokeWidth=".26458">+</tspan></text>
+  <text x="270.87231" y="23.564472" style="line-height:1.25" xml:space="preserve"><tspan x="270.87231" y="23.564472" fill="#facd32" font-family="'Segoe UI'" font-weight="600" strokeWidth=".26458">+</tspan></text>
+ </g>
+ <rect x="271.9" y="74.485" width="3.323" height="9.0384" ry="1.6615" fill="#fac921" stop-color="#000000" stroke="#646466" strokeLinecap="round" strokeWidth=".21167" style="paint-order:fill markers stroke"/>
+ <g fill="#fff" stroke="#646466" strokeLinecap="round" strokeWidth=".21167">
+  <rect x="429.44" y="31.524" width="2.4303" height="2.4303" stop-color="#000000" style="paint-order:fill markers stroke"/>
+  <rect x="331.68" y="68.468" width="2.4303" height="2.4303" stop-color="#000000" style="paint-order:fill markers stroke"/>
+  <rect x="380.5" y="142.1" width="2.4303" height="2.4303" stop-color="#000000" style="paint-order:fill markers stroke"/>
+ </g>
+ <rect x="245.33" y="55.757" width="235.13" height="107.47" opacity=".2" stop-color="#000000" style="paint-order:fill markers stroke"/>
+</svg>

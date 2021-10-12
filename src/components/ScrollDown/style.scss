@@ -1,0 +1,13 @@
+#scroll {
+  animation: upperdown 1.5s infinite;
+}
+
+@keyframes upperdown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(2500px);
+    opacity: 0;
+  }
+}
