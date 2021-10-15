@@ -5,6 +5,7 @@ import linkedinicon from "../../images/linkedin.svg";
 import instagramicon from "../../images/instagram.svg";
 import { useState } from "react";
 import LeftMenu from "../LeftMenu";
+import github from "../../images/github.svg";
 
 const SideMenu = () => {
   const [leftMenu, stateLeftMenu] = useState(false);
@@ -49,6 +50,11 @@ const SideMenu = () => {
       </div>
       <LeftMenu state={leftMenu} />
       <div className="socials">
+        <a href="#">
+          <div className="github-icon">
+            <img src={github} width="24" height="24" />
+          </div>
+        </a>
         <a href="#">
           <div className="facebook-icon">
             <img src={mediumicon} width="24" height="24" />

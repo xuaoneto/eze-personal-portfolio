@@ -6,11 +6,11 @@ const MenuBar = () => {
 
   const internalmenu = [
     { name: "HOME", active: true },
-    { name: "PORTFOLIO", active: false },
-    { name: "SERVICES", active: false },
-    { name: "CONTACTS", active: false },
+    { name: "PORTFÓLIO", active: false },
+    { name: "SERVIÇOS", active: false },
+    { name: "GITHUB", active: false },
     { name: "BLOG", active: false },
-    { name: "PAGES", active: false },
+    { name: "CONTATO", active: false },
   ];
 
   const ActiveItem = (id) => {

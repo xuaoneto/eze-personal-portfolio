@@ -1,13 +1,29 @@
-#scroll {
-  animation: upperdown 1.5s infinite;
+#arrowdown {
+  animation: down 3s infinite;
 }
-
-@keyframes upperdown {
+#arrowup {
+  animation: up 3s infinite;
+}
+@keyframes up {
   0% {
     transform: translateY(0);
   }
+  50% {
+    transform: translateY(-30px);
+  }
   100% {
-    transform: translateY(2500px);
-    opacity: 0;
+    transform: translateY(0);
+  }
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
