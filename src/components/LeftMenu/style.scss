@@ -84,12 +84,21 @@
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      animation: scaling 0.5s;
+      transition: height 0.5s;
+      height: 0;
+    }
+    .submenu-container.active {
+      height: 200px;
     }
     .menu-item.sub {
       margin-left: 10px;
       animation: appear 1s;
-
+      .social {
+        color: white;
+        font-size: 12px;
+        margin-left: 10px;
+        font-weight: 600;
+      }
       a {
         text-decoration: none;
       }
